@@ -1,0 +1,53 @@
+NODEMON COMMANDS:
+//npm i nodemon
+//npx nodemon index.js
+
+its mandatory to start 
+npx nodemon index.js every time we try to use post or use api
+
+
+
+
+
+
+
+
+
+1) create a data set
+2) we have to export the entire dataset and we use module.export module means this data 
+3) we need a database in out index.js so se give const database=require("./database")
+./ means same parent file
+4)to check if everything is connected we will print all books
+----------------------------------------------------------------------------------------------------
+nodemon to keep the server running on localhost:3000%
+5) we use the command npm i nodemon to install it in cmd prompt
+6) npx nodemon index.js is used to run 
+
+7)nodemon is a package that will dynamically update everything and so we dont have to do npm node.js repeatedly
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+now for every api we need to
+1) we should assign our data base to a variable===> const database=require("./database");
+2) we should say our file to connect with express so====> const booky=express();
+3)to get a specific element we will check it with the parameter given by user with our database value.
+4) if it matched we will fetch that element or else we will say that book not found.
+to compare the items; if the given item is a part of an array in our database we will use include function
+eg: 
+
+book.category.includes(req.params.category)
+
+5) if the parameter given by the user is in json string format we should parseInt that value to use ===
+eg:
+
+ (author) => author.id === parseInt(req.params.ID)
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+1)to use and execute the post request we need body-parser so we give that as var bodyParser=require("body-parser")
+
+2)booky.use(bodyParser.urlencoded({extended:true}));
+
+to access the post data we should use body-parser.  so we are telling booky to use body-parser. the above line will make the data to init the body-parser and convert or parse it into an json object that is readable for both machine and us.
+the urlencoded shows that the request that we are passing might have a different kinds of formats. we want the entire url also to get converted to json format

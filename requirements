@@ -1,0 +1,77 @@
+1) Collection of books 
+    id of book=ISDN
+    Titile
+    pub date
+    language
+    numpage
+    author[]
+    category[] //its scientific or eduction of gk etc;
+
+2) Collection of authors
+    Id
+    name
+    books[]
+
+
+3) Collection of Managements
+    Id
+    name
+    books[]
+
+
+4) We have to design and code for these APIs
+
+----------------------------------------------------------------------------------------------
+
+                                                        books
+
+ we need API to 
+1) get the list of all books
+2)To get a specific book
+3) to get a list of books based on the category
+4)to get a list of books based on languages
+
+
+                                                        AUTHORS
+we need API to 
+1)To get all authors
+2) To get a specific author
+3) to get a list of authors based on books 
+
+
+                                                        PUBLICATIONS
+                                            
+We need api to
+1)To get all publications
+2)To get specific publication based on id
+3)To get a list of publications based on book
+
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    POSTMAN- Day 23 in series
+
+POSTMAN is used to send the data to server
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    POSTMAN- Day 24 in series
+
+PUT & DELETE IN POST MAN
+
+
+update book details if author is changed
+------------------------------------------------------------------------------------------------------------------------------------
+DELETE
+
+
+TASKS:
+1) DEL book
+2) DEL AUTHOR FROM book
+3) DELETE AUTHOR FROM BOOK AND RELATED BOOK FROM AUTHOR
